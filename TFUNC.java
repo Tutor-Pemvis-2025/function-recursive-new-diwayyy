@@ -8,9 +8,11 @@ public class T00 {
         int n, hasil;
 
         n = Integer.parseInt(input.nextLine());
-        hasil = hitungRekursif(n);
-        System.out.println("Bilangan yang dimasukkan (N) : " + n);
-        System.out.println("Hasil perhitungan rekursif:" + hasil);
+        if (n >= 0) {
+            hasil = hitungRekursif(n);
+            System.out.println("Bilangan yang dimasukkan (N) : " + n);
+            System.out.println("Hasil perhitungan rekursif:" + hasil);
+        }
     }
     
     public static int hitungRekursif(int n) {
