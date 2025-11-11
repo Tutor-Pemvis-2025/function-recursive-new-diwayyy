@@ -9,9 +9,6 @@ public class T00 {
 
         n = Integer.parseInt(input.nextLine());
         if (n >= 0) {
-            hasil = hitungRekursif(n);
-            System.out.println("Bilangan yang dimasukkan (N) : " + n);
-            System.out.println("Hasil perhitungan rekursif:" + hasil);
         }
     }
     
