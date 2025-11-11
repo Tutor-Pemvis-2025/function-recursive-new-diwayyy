@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="TFUNC"/>
+        <attribute name="authors" value="dewi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-11 08.53.44 PM"/>
+        <attribute name="created" value="ZGV3aTtESVdBQVk7MjAyNS0xMS0xMTswOC4xOC4zNCBQTTsyMTI5"/>
+        <attribute name="edited" value="ZGV3aTtESVdBQVk7MjAyNS0xMS0xMTswOC41My40NCBQTTsxOzIyMzc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, hasil" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="hasil" expression="HitungRekursif(n)"/>
+            <output expression="&quot;Bilangan yang dimasukkan (N): &quot; &amp; n" newline="True"/>
+            <output expression="&quot;Hasil perhitungan rekursif: &quot; &amp; hasil" newline="True"/>
+        </body>
+    </function>
+    <function name="HitungRekursif" type="Integer" variable="hasil">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="hasil" type="Integer" array="False" size=""/>
+            <if expression="n==1">
+                <then>
+                    <assign variable="hasil" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="hasil" expression="n+HitungRekursif(n-1)"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
