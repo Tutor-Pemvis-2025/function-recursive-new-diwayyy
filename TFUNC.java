@@ -1,3 +1,6 @@
+//12S25042 - Dewi Natasya Sitorus
+//12S25055 - Marissa Victoria Silalahi
+
 import java.util.*;
 import java.lang.Math;
 
@@ -9,7 +12,7 @@ public class TFUNC {
 
         n = Integer.parseInt(input.nextLine());
         hasil = hitungRekursif(n);
-        System.out.println("Bilangan yang dimasukkan (N): " + n);
+        System.out.println("Bilangan yang dimasukkan : " + n);
         System.out.println("Hasil perhitungan rekursif: " + hasil);
     }
     
